@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://mern_test:timormortis@cluster0.5nq7f.mongodb.net/devcon?retryWrites=true&w=majority",
+    "jwtSecret": "thisisthesecret"
+}
