@@ -1,4 +1,6 @@
 {
     "mongoURI": "mongodb+srv://mern_test:timormortis@cluster0.5nq7f.mongodb.net/devcon?retryWrites=true&w=majority",
-    "jwtSecret": "thisisthesecret"
+    "jwtSecret": "thisisthesecret",
+    "githubClientId": "1bd36a2292dec76b2910",
+    "githubSecret": "6519120b3d23d7723d77ad192f0ac4bd96402935"
 }
