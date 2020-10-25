@@ -1,1 +1,2 @@
-Developer portfolio-connection platform. As a portfolio project to be placed on eakzit.site
+Developer portfolio-connection platform. As a portfolio project to be placed on eakzit.site|
+Currently under development...Detailed docs to be released...
