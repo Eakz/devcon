@@ -1,2 +1,1 @@
-Developer connection blog back-end. RESTful express-based API
-using bcrypt,express-validate,jwt etc...
+Developer portfolio-connection platform. As a portfolio project to be placed on eakzit.site
