@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Register() {
     const [formData, setFormData] = useState({
@@ -9,13 +10,13 @@ function Register() {
     });
     const { name, email, password, confpassword } = formData;
     const handleChange = e =>
-        setFormData({ ...formData, [e.target.name]: [e.target.value] });
-    const handleSubmit = e => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    const handleSubmit = async e => {
         e.preventDefault();
         if (password !== confpassword) {
-            console.log("Passwords no match");
+            console.error("Passwords no match");
         } else {
-            console.log(formData);
+            console.log("hi");
         }
     };
     return (
@@ -76,7 +77,7 @@ function Register() {
                 />
             </form>
             <p className="my-1">
-                Already have an account? <a href="login.html">Sign in</a>
+                Already have an account? <Link to="/login">Log In</Link>
             </p>
         </Fragment>
     );
