@@ -7,7 +7,7 @@ function Login() {
         email: "",
         password: "",
     });
-    const { name, email, password } = formData;
+    const { email, password } = formData;
     const handleChange = e =>
         setFormData({ ...formData, [e.target.name]: e.target.value });
     const handleSubmit = async e => {
@@ -41,11 +41,7 @@ function Login() {
                     />
                 </div>
 
-                <input
-                    type="submit"
-                    value="Login"
-                    className="btn btn-primary"
-                />
+                <input type="submit" value="Login" className="btn btn-primary" />
             </form>
             <p className="my-1">
                 No account? <Link to="/register">Create an account</Link>

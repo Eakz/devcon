@@ -17,10 +17,9 @@ function Register({ setAlert }) {
     const handleSubmit = async e => {
         e.preventDefault();
         if (password !== confpassword) {
-            console.log(setAlert);
             setAlert("Passwords just do not match!", "danger");
         } else {
-            console.log("hi");
+            console.log("You are registered...");
         }
     };
     return (
@@ -60,7 +59,7 @@ function Register({ setAlert }) {
                         name="password"
                         value={password}
                         placeholder="Password"
-                        minlength="6"
+                        minLength="6"
                         onChange={handleChange}
                     />
                 </div>
@@ -70,7 +69,7 @@ function Register({ setAlert }) {
                         name="confpassword"
                         value={confpassword}
                         placeholder="Confirm Password"
-                        minlength="6"
+                        minLength="6"
                         onChange={handleChange}
                     />
                 </div>
