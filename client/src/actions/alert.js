@@ -11,5 +11,5 @@ export const setAlert = (msg, alertType, timer = 5555) => dispatch => {
             id,
         },
     });
-    setTimeout(() => dispatch({ type: CANCEL_ALERT, payload: id }, timer));
+    setTimeout(() => dispatch({ type: CANCEL_ALERT, payload: id }), timer);
 };
