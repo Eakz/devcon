@@ -26,7 +26,7 @@ router.get("/me", auth, async (req, res) => {
         }
         res.json(profile);
     } catch (err) {
-        console.log(err.message);
+        console.warn(err.message);
         return res.status(500).send("Server Error");
     }
 });
@@ -116,7 +116,7 @@ router.get("/", async (req, res) => {
         ]);
         res.json(profiles);
     } catch (err) {
-        console.log(err.message);
+        console.warn(err.message);
         res.status(500).send("Server Error");
     }
 });
@@ -154,7 +154,7 @@ router.get("/", auth, async (req, res) => {
         await User.findOneAndRemove({ _id: req.user.id });
         res.json({ msg: `${req.user} removed` });
     } catch (err) {
-        console.log(err.message);
+        console.warn(err.message);
         res.status(500).send("Server Error");
     }
 });
@@ -323,7 +323,7 @@ router.get("/github/:username", (req, res) => {
             res.json(JSON.parse(body));
         });
     } catch (error) {
-        console.log(error.message);
+        console.warn(error.message);
         res.status(500).send("Server error with github");
     }
 });

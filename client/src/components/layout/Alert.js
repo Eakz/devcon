@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
 const Alert = ({ alerts }) => {
-    console.log('alerts',alerts);
     return (
         alerts !== null &&
         alerts?.length > 0 &&
@@ -15,9 +14,9 @@ const Alert = ({ alerts }) => {
     );
 };
 
-Alert.propTypes = {
-    alertReducer: PropTypes.array.isRequired,
-};
+// Alert.propTypes = {
+//     alertReducer: PropTypes.array.isRequired,
+// };
 const mapStateToProps = state => {
     return {
         alerts: state.alertReducer,
